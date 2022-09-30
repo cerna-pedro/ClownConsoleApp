@@ -6,8 +6,10 @@
         {
             IClown fingersTheClown = new ScaryScary("big red nose", 14);
             fingersTheClown.Honk();
-            IScaryClown iScaryClownReference = (IScaryClown) fingersTheClown;
-            iScaryClownReference.ScareLittleChildren();
+            if (fingersTheClown is IScaryClown iScaryClownReference)
+            {
+                iScaryClownReference.ScareLittleChildren();
+            }
         }
     }
 }
