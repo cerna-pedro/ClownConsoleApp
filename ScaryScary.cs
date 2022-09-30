@@ -9,7 +9,7 @@ namespace ClownConsoleApp
     internal class ScaryScary :FunnyFunny,IScaryClown
     {
         public string ScaryThingIHave { get { return $"{scaryThingCount} spiders"; } }
-        private int scaryThingCount;
+        private readonly int scaryThingCount;
 
         public ScaryScary(string funnyThingIHave,int scaryThingCount) :base(funnyThingIHave)
         {
